@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Random Color Generator</title>
+</head>
+<body>
+ <button onclick="generateColor()">Generate Color</button>
+
+ <div id="color1" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+ <div id="color2" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+ <div id="color3" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+ <div id="color4" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+
+ <script>
+  function generateColor() {
+   let red1 = Math.floor(Math.random() * 256);
+   let green1 = Math.floor(Math.random() * 256);
+   let  blue1 = Math.floor(Math.random() * 256);
+
+   var color1 = "rgb(" + red1 + ", " + green1 + ", " + blue1 + ")";
+
+   document.getElementById("color1").style.backgroundColor = color1;
+
+   var red2 = Math.floor(Math.random() * 256);
+   var green2 = Math.floor(Math.random() * 256);
+   var blue2 = Math.floor(Math.random() * 256);
+
+   var color2 = "rgb(" + red2 + ", " + green2 + ", " + blue2 + ")";
+
+   document.getElementById("color2").style.backgroundColor = color2;
+
+   var red3 = Math.floor(Math.random() * 256);
+   var green3 = Math.floor(Math.random() * 256);
+   var blue3 = Math.floor(Math.random() * 256);
+
+   var color3 = "rgb(" + red3 + ", " + green3 + ", " + blue3 + ")";
+
+   document.getElementById("color3").style.backgroundColor = color3;
+
+   var red4 = Math.floor(Math.random() * 256);
+   var green4 = Math.floor(Math.random() * 256);
+   var blue4 = Math.floor(Math.random() * 256);
+
+   var color4 = "rgb(" + red4 + ", " + green4 + ", " + blue4 + ")";
+
+   document.getElementById("color4").style.backgroundColor = color4;
+  }
+ </script>
+</body>
+</html>
